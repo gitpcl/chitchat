@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
+
+:root {
+	--dark-color-a: #111113;
+	--dark-color-b: #202024;
+	--light-color-a: #323238;
+	--light-color-b: #C2C2C7;
+	--highlight-color: #53A2BE;
+	--success-color: #419D78;
+	--doubt-color: #E0A458;
+	--error-color:#D9594C;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Archivo', sans-serif;
+	font-size: 1rem;
+	background: var(--dark-color-b);
+	height: 100vh;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn,
+.btn1,
+.btn2 {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--highlight-color);
+	color: white;
+	border: 0;
+	font-size: 1rem;
+	outline:none;
+}
+
+input {
+	outline:none;
+}
+
+/*FOOTER*/
+
+footer {
+	background-color: var(--dark-color-a);
+	padding: 20px;
+	position: fixed;
+	bottom:0;
+	width: 100%;
+}
+
+.footer-links {
+	display: flex;
+	justify-content: center;
+}
+
+.footer-links a {
+	color: #9CA7B1;
+	font-size: .9rem;
+	color: #A7B1BA;
+	margin: 10px;
+}

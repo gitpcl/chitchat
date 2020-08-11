@@ -1,0 +1,142 @@
+.chat {
+	background: var(--dark-color-a);
+	height: 100vh;
+}
+
+.chat-container {
+	max-width: 80%;
+	margin: 0 auto;
+	background-color: var(--dark-color-a);
+	overflow: hidden;
+	
+}
+
+.chat-header {
+	background: var(--dark-color-b);
+	margin-top: 20px;
+	border-radius: 5px 5px 0 0;
+	color: white;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-header-left {
+	position: relative;
+}
+
+.chat-header img {
+	width: 30px;
+}
+
+.btn1 {
+	border-radius: 5px;
+	background-color: transparent;
+	color: var(--light-color-b);
+}
+
+.chat-main {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+	background: var(--light-color-a);
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 1rem;
+	color: white;
+	font-size: 1rem;
+	font-weight: 400;
+}
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+	background-image: url(/images/chat-bg.png);
+}
+
+.chat-messages .message {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+}
+
+.chat-messages .message .meta {
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--dark-color-b);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: #777;
+}
+
+.chat-form-container {
+	padding: 10px 10px;
+	background-color: var(--light-color-b);
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 16px;
+	padding: 20px;
+	height: 40px;
+	flex: 1;
+	border: none;
+	border-radius: 3rem;
+}
+
+.btn1:hover {
+	color: var(--error-color);
+}
+
+.btn2 {
+	padding: 10px 20px;
+	border-radius: 3px;
+	background: transparent;
+	color: var(--light-color-a);
+}
+
+.chat-sidebar span {
+	display: inline-flex;
+	vertical-align: middle;
+	margin-right: 10px;;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}
