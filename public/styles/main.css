@@ -52,7 +52,7 @@ input {
 
 footer {
 	background-color: var(--dark-color-a);
-	padding: 20px;
+	padding: .5rem;
 	position: fixed;
 	bottom:0;
 	width: 100%;
