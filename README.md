@@ -40,7 +40,7 @@ Realtime chat app with websockets using Node.js.
 
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
-- [Socket.io] (https://socket.io/)
+- [Socket.io](https://socket.io/)
 
 ## :memo: License
 
